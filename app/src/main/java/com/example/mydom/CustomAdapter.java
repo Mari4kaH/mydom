@@ -42,7 +42,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.cards_layout, parent, false);
 
-        //view.setOnClickListener(hotels.myOnClickListener);
+        view.setOnClickListener(hotels.myOnClickListener);
 
         MyViewHolder myViewHolder = new MyViewHolder(view);
         return myViewHolder;
@@ -58,7 +58,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         textViewName.setText(dataSet.get(listPosition).getName());
         textViewInfo.setText(dataSet.get(listPosition).getInfo());
-        textViewInfo.setText(dataSet.get(listPosition).getCity());
+        textViewCity.setText(dataSet.get(listPosition).getCity());
         imageView.setImageResource(dataSet.get(listPosition).getImage());
     }
 

@@ -47,7 +47,6 @@ public class hotels extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotels);
 
-        //myOnClickListener = new MyOnClickListener(this);
 
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -74,7 +73,6 @@ public class hotels extends AppCompatActivity {
                             String name = documentSnapshot.get("name").toString();
                             String information = documentSnapshot.get("information").toString();
                             String city = documentSnapshot.get("city").toString();
-                            Toast.makeText(hotels.this, city, Toast.LENGTH_SHORT).show();
                             int image = R.drawable.ic_launcher_foreground;
                             data.add(new DataModel(
                                     name,
@@ -83,23 +81,27 @@ public class hotels extends AppCompatActivity {
                                     image
                             ));
                         }
+                        adapter = new CustomAdapter(data);
+                        recyclerView.setAdapter(adapter);
                     }
                 });
+    }
 
+    private class MyOnClickListener implements View.OnClickListener {
 
-        /*for (int i = 0; i < MyData.nameArray.length; i++) {
-            data.add(new DataModel(
-                   MyData.nameArray[i],
-                    MyData.versionArray[i],
-                    MyData.id_[i],
-                   MyData.drawableArray[i]
-            ));
-        }*/
+        private final Context context;
 
-        //removedItems = new ArrayList<Integer>();
+        private MyOnClickListener(Context context) {
+            this.context = context;
+        }
 
-        adapter = new CustomAdapter(data);
-        recyclerView.setAdapter(adapter);
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(hotels.this, hotelView.class);
+            //intent.putExtra(v);
+            startActivity(intent);
+        }
+
     }
 
     @Override

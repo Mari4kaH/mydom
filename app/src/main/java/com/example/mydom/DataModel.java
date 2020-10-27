@@ -13,7 +13,7 @@ public class DataModel {
         this.name = name_;
         this.information = information_;
         this.city = city_;
-        this.image = image_;
+        //this.image = image_;
     }
 
     public String getName() {
