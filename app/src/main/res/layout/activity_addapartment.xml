@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LL_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hotel"
+            android:autofillHints=""
+            android:inputType="" />
+
+        <EditText
+            android:id="@+id/et_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/country" />
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city" />
+
+        <EditText
+            android:id="@+id/et_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/street"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/et_nr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nr" />
+
+        <EditText
+            android:id="@+id/et_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/index" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/price" />
+
+        <EditText
+            android:id="@+id/et_phoneNr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:phoneNumber="true"
+            android:hint="@string/phone_number"
+            tools:ignore="Deprecated" />
+
+
+        <Spinner
+            android:id="@+id/s_kind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/kind_of_place"
+            android:textSize="24sp"/>
+
+
+        <EditText
+            android:id="@+id/et_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/information_about_place"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LL_1"
+        android:id="@+id/LL_2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:text="Choose"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:text="Upload"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_below="@+id/LL_2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="60dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imgView"
+        android:layout_marginTop="20dp"
+        android:text="submit" />
+
+    </RelativeLayout>
+
+</ScrollView>

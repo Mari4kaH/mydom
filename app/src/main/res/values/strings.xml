@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">mydom</string>
+    <string name="apiKey" translatable="false">AIzaSyCJpYeYrZTPR1LeLmnLWPXeESIk1XhaMqE</string>
+    <string name="name_hotel">name hotel</string>
+    <string name="street">street</string>
+    <string name="kind_of_place">kind of place</string>
+    <string name="information_about_place">information about place</string>
+    <string name="index">index</string>
+    <string name="nr">nr</string>
+    <string name="city">city</string>
+    <string name="country">country</string>
+    <string name="price">price</string>
+    <string name="phone_number">phone number</string>
+</resources>

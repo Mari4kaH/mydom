@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hotelView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_name"
+                android:layout_weight="1"
+                android:text="@string/name_hotel" />
+
+            <TextView
+                android:id="@+id/et_name"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_country"
+                android:layout_weight="1"
+                android:text="@string/country"/>
+
+            <TextView
+                android:id="@+id/et_country"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_city"
+                android:layout_weight="1"
+                android:text="@string/city" />
+
+            <TextView
+                android:id="@+id/et_city"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_street"
+                android:layout_weight="1"
+                android:text="@string/street" />
+
+            <TextView
+                android:id="@+id/et_street"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_nr"
+                android:layout_weight="1"
+                android:text="@string/nr" />
+
+            <TextView
+                android:id="@+id/et_nr"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_index"
+                android:layout_weight="1"
+                android:text="@string/index"  />
+
+            <TextView
+                android:id="@+id/et_index"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_price"
+                android:layout_weight="1"
+                android:text="@string/price" />
+
+            <TextView
+                android:id="@+id/et_price"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_phoneNr"
+                android:layout_weight="1"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/et_phoneNr"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_kind"
+                android:layout_weight="1"
+                android:text="@string/kind_of_place" />
+
+            <TextView
+                android:id="@+id/et_kind"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow android:background="#DAE8FC" android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/l_information"
+                android:layout_weight="1"
+                android:text="@string/information_about_place" />
+
+            <TextView
+                android:id="@+id/et_information"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+    </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
